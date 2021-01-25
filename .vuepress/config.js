@@ -1,5 +1,5 @@
 module.exports = {
-  "title": "LIUCHAO",
+  "title": "LIU CHAO",
   "description": "",
   "dest": "dist",
   "head": [
@@ -36,14 +36,9 @@ module.exports = {
         "icon": "reco-date"
       },
       {
-        "text": "Docs",
+        "text": "文档",
         "icon": "reco-message",
-        "items": [
-          {
-            "text": "vuepress-reco",
-            "link": "/docs/theme-reco/"
-          }
-        ]
+        "link": "/docs/theme-reco/"
       },
       {
         "text": "关于我",
@@ -58,9 +53,13 @@ module.exports = {
       }
     ],
     "sidebar": {
+      '/docs/typescript/': [
+        ""
+      ],
       "/docs/theme-reco/": [
         ""
-      ]
+      ],
+      
     },
     "type": "blog",
     "blogConfig": {
@@ -73,7 +72,6 @@ module.exports = {
         "text": "标签"
       }
     },
-    
     "friendLink": [
       {
         "title": "午后南杂",
@@ -90,18 +88,20 @@ module.exports = {
     ],
     "logo": "/logo.png",
     "search": true,
-    "searchMaxSuggestions": 10,
+    "searchMaxSuggestions": 6,
     "lastUpdated": "Last Updated",
-    "author": "liuchao",
+    "author": "Liu Chao",
     "authorAvatar": "/avatar.png",
-    "record": "xxxx",
+    "record": "43001",
     "startYear": "2019"
   },
   "markdown": {
     "lineNumbers": true
   },
   plugins: [
+    // click fireworks
     ['cursor-effects'],
+    // music player
     ['meting', {
       //metingApi: "https://meting.sigure.xyz/api/music",
       meting: {
@@ -119,7 +119,7 @@ module.exports = {
         // 自动播放
         autoplay: true,
         // 歌曲栏折叠
-        listFolded:true,
+        listFolded: false,
         // 颜色
         theme: '#3eaf7c',
         loop: 'all',
@@ -129,16 +129,24 @@ module.exports = {
         // 初始音量
         volume: 0.7,
         // 关闭歌词显示
-        lrcType: 3
+        lrcType: 0
       },
       mobile :{
         // 手机端去掉cover图
         cover: false,
       }
     }],
+    // black-cat
     ['@vuepress-reco/vuepress-plugin-kan-ban-niang', {
       theme: ['haru1'],
       clean: true
+    }],
+    // copy tools
+    ['vuepress-plugin-nuggets-style-copy', {
+      copyText: "复制代码",
+      tip: {
+          content: "复制成功!"
+      }
     }]
   ]
 }

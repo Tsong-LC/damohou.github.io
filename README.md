@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: vuepress-theme-reco
+heroText: Life is a struggle
 tagline: A simple and beautiful vuepress blog theme.
 # heroImage: /hero.png
 # heroImageStyle: {
