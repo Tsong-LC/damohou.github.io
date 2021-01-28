@@ -1,5 +1,5 @@
 module.exports = {
-  "title": "LIU CHAO",
+  "title": "LIUCHAO",
   "description": "",
   "dest": "dist",
   "head": [
@@ -20,10 +20,15 @@ module.exports = {
   ],
   "theme": "reco",
   "themeConfig": {
+    subSidebar: 'auto',
     // 默认值是 true 。设置为 false 来禁用所有页面的 下一篇 链接
     nextLinks: true,
     // 默认值是 true 。设置为 false 来禁用所有页面的 上一篇 链接
     prevLinks: true,
+    valineConfig: {
+      appId: '2TLY9BqeDPy4r2jyr5Q7pMmG-gzGzoHsz',// your appId
+      appKey: 'bMHFIHVUzntjzv3YURax0MKT', // your appKey
+    },
     "nav": [
       {
         "text": "主页",
@@ -34,11 +39,6 @@ module.exports = {
         "text": "时间线",
         "link": "/timeline/",
         "icon": "reco-date"
-      },
-      {
-        "text": "文档",
-        "icon": "reco-message",
-        "link": "/docs/theme-reco/"
       },
       {
         "text": "关于我",
@@ -90,9 +90,8 @@ module.exports = {
     "search": true,
     "searchMaxSuggestions": 6,
     "lastUpdated": "Last Updated",
-    "author": "Liu Chao",
+    "author": "LIUCHAO",
     "authorAvatar": "/avatar.png",
-    "record": "43001",
     "startYear": "2019"
   },
   "markdown": {
